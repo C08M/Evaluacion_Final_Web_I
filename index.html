@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TaskFlow</title>
+</head>
+<body>
+
+    <header>
+        <h1>TaskFlow</h1>
+        <p>Organiza tus tareas del día</p>
+    </header>
+
+    <main>
+
+        <section id="formulario">
+            <input type="text" id="nuevaTarea" placeholder="Escribe una nueva tarea..." onkeypress="detectarEnter(event)">
+            <button type="button" onclick="agregarTarea()">Agregar</button>
+        </section>
+
+        <section id="tareas">
+            <div class="tareas-header">
+                <p id="contador">0 tareas pendientes</p>
+                <button type="button" id="btnEliminarCompletadas" onclick="eliminarCompletadas()">Eliminar completadas</button>
+            </div>
+
+            <ul id="listaTareas">
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Evaluación Final Web I - César Miranda</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
